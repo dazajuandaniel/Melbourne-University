@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "Assignmentijson.py", line 144, in <module>
+    tweet_coordinates=open_file_ijson(bigTwitter)
+  File "Assignmentijson.py", line 43, in open_file_ijson
+    for it in objects:
+  File "/home/dazajuandaniel/.local/lib/python2.7/site-packages/ijson/common.py", line 138, in items
+    current, event, value = next(prefixed_events)
+  File "/home/dazajuandaniel/.local/lib/python2.7/site-packages/ijson/common.py", line 65, in parse
+    for event, value in basic_events:
+  File "/home/dazajuandaniel/.local/lib/python2.7/site-packages/ijson/backends/python.py", line 185, in basic_parse
+    for value in parse_value(lexer):
+  File "/home/dazajuandaniel/.local/lib/python2.7/site-packages/ijson/backends/python.py", line 116, in parse_value
+    for event in parse_array(lexer):
+  File "/home/dazajuandaniel/.local/lib/python2.7/site-packages/ijson/backends/python.py", line 138, in parse_array
+    for event in parse_value(lexer, symbol, pos):
+  File "/home/dazajuandaniel/.local/lib/python2.7/site-packages/ijson/backends/python.py", line 127, in parse_value
+    raise UnexpectedSymbol(symbol, pos)
+ijson.backends.python.UnexpectedSymbol: Unexpected symbol u']' at 10296775280
+slurmstepd: error: *** JOB 642063 ON spartan-bm014 CANCELLED AT 2017-04-05T00:20:49 DUE TO TIME LIMIT ***
